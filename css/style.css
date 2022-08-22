@@ -35,10 +35,15 @@ Navigation
   z-index: 3;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 74px;
-  overflow: hidden;
+  /* height: 70px; */
+  width: 100vw;
+  /* overflow: hidden; */
+
+
 }
+
+
+
 
 .cd-side-navigation::before {
   /* background color of the side navigation */
@@ -46,9 +51,8 @@ Navigation
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: -webkit-calc(100% - 4px);
-  width: calc(100% - 4px);
+  height: 78px;
+  width: 100vw;
   background-color: #131519;
 }
 
@@ -56,11 +60,16 @@ Navigation
   height: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cd-side-navigation li {
-  width: -webkit-calc(100% - 4px);
-  width: calc(100% - 4px);
+  /* width: -webkit-calc(100% - 4px);
+  width: calc(100% - 4px); */
+  width: 100px;
 }
 
 .cd-side-navigation a {
@@ -205,7 +214,7 @@ Navigation
   height: 100%;
   width: 100%;
   overflow-y: auto;
-  padding-left: 70px;
+  /* padding-left: 70px; */
   /* Force Hardware Acceleration */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -475,7 +484,7 @@ Navigation
 #cd-loading-bar {
   position: fixed;
   z-index: 2;
-  left: 70px;
+  /* left: 70px; */
   width: 4px;
   visibility: hidden;
   /* Force Hardware Acceleration */
@@ -510,6 +519,6 @@ Navigation
 
 @media only screen and (min-width: 480px) {
   #cd-loading-bar {
-    left: 90px;
+    /* left: 90px; */
   }
 }
