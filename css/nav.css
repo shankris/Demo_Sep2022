@@ -1,0 +1,55 @@
+    nav {
+      /* width: 100vw; */
+      background-color: #203060;
+      color: #fff;
+      padding: 0px;
+      margin: 0;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      nav {
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #203060;
+        color: #fff;
+        display: flex;
+        align-items: flex-end;
+        /* padding: 0 0 10px 0; */
+      }
+
+      nav #home {
+        position: relative;
+      }
+
+
+      nav ul li {
+        width: 100px;
+        height: 60px;
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+        background-color: rgb(82, 82, 82);
+      }
+
+      nav ul li svg {
+        display: block;
+        text-align: center;
+      }
+
+    }
