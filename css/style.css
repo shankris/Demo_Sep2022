@@ -51,7 +51,7 @@ Navigation
   position: absolute;
   top: 0;
   left: 0;
-  height: 78px;
+  height: 70px;
   width: 100vw;
   background-color: #131519;
 }
@@ -75,7 +75,7 @@ Navigation
 .cd-side-navigation a {
   display: block;
   position: relative;
-  padding: 4em 0 1.5em;
+  padding: 3.4em 0 1.5em;
   font-size: 1.2rem;
   text-align: center;
   color: #4a5261;
@@ -94,7 +94,7 @@ Navigation
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  top: 1.3em;
+  top: 1em;
 }
 
 .cd-side-navigation a svg * {
@@ -107,10 +107,10 @@ Navigation
   /* 4px line to the right of the item - visible on hover */
   content: '';
   position: absolute;
-  top: 0;
-  right: -4px;
-  height: 100%;
-  width: 4px;
+  bottom: 0;
+  left: 0px;
+  height: 4px;
+  width: 100%;
   background-color: #83b0b9;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
@@ -183,11 +183,11 @@ Navigation
 
   .cd-side-navigation li {
     width: 25%;
-    max-width: 140px;
+    max-width: 110px;
   }
 
   .cd-side-navigation a {
-    padding: 3em 0 1.5em;
+    padding: 3.2em 0;
     font-size: 1.4rem;
   }
 
@@ -395,7 +395,7 @@ Navigation
   top: 50%;
   left: 0;
   /* this prevents title from jumping when the section scroll bar is visible */
-  width: calc(100vw - 90px);
+  width: 100vw;
   padding: 1em;
   color: #ffffff;
   text-align: center;
@@ -521,4 +521,49 @@ Navigation
   #cd-loading-bar {
     /* left: 90px; */
   }
+}
+
+/* Added */
+
+.logo {
+  line-height: 45px;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 10px;
+  height: 60px;
+}
+
+.headerRWD {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  padding: 5px 0 20px 40px;
+
+  color: #fff;
+  z-index: 10;
+  text-transform: uppercase;
+}
+
+.headerRWD .first {
+  font-weight: 400;
+  display: inline-block;
+  letter-spacing: -1px;
+  font-size: 24px;
+}
+
+.headerRWD .last {
+  font-weight: 200;
+  display: inline-block;
+  color: rgb(207, 207, 207);
+  letter-spacing: 3px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  .logo {
+    visibility: hidden;
+  }
+
 }
