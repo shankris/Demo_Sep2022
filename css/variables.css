@@ -1,0 +1,17 @@
+:root {
+  --headerHeight: 70px;
+  --headerColor: #21272c;
+
+  --metroBg: #f2f2f2;
+
+  --contentHeight: calc(100vh - var(--headerHeight));
+
+  --pageWidth: 1800px;
+  --pageMaxWidth: 90%;
+  --pageTitleName: #000;
+  --pageTitle: #9c9c9c;
+
+
+  --tileColor: #c1c1c1;
+  --tileColorHover: #e2e2e2;
+}

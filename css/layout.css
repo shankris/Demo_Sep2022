@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+.metroBg {
+  background-color: var(--metroBg);
+  /* background-color: lightblue; */
+}
+
+.container {
+  max-width: var(--pageWidth);
+  width: var(--pageMaxWidth);
+  margin: 0 auto;
+  height: var(--contentHeight);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    height: 100vh;
+    padding: 6px 0 20px;
+  }
+
+}
+
+.pageTitle {
+  font-size: 38px;
+  color: var(--pageTitle);
+  font-weight: 300;
+  padding: 10px 4px;
+  width: 100%;
+
+  position: sticky;
+  background-color: var(--metroBg);
+  top: 0;
+  z-index: 999;
+
+}
+
+.metroMenu {
+  width: var(--pageWidth);
+  margin: 0 auto;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 5fr 2fr 3fr;
+  grid-gap: 30px;
+  width: 100%;
+}
+
+.metroMenu {
+  list-style: none;
+}
+
+.metroMenu1 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  list-style-type: none;
+  width: 100%;
+}
+
+li.item {
+  min-width: 100px;
+  height: 16vh;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 10px;
+  color: #000;
+  background-color: var(--tileColor);
+  transition: all .6s ease-in;
+  user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  li.item {
+    height: 6vh;
+  }
+
+}
+
+.l1 {
+  grid-column: 1 / 2;
+  background-color: #df6d03;
+}
+
+[data-animation] {
+  position: relative;
+  overflow: hidden;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.item i {
+  font-size: 36px;
+  line-height: 40px;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.ion-social-android-outline::before {
+  content: "\f224";
+}
+
+li.item {
+  min-width: 100px;
+  height: 16vh;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 10px;
+  color: #000;
+  background-color: var(--tileColor);
+  transition: all .6s ease-in;
+  user-select: none;
+}
+
+li.item:hover {
+  background-color: var(--tileColorHover);
+}

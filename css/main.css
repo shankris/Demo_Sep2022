@@ -1,2 +1,6 @@
+@import "variables.css";
 @import "generic.css";
+@import "variable.css";
 @import "nav.css";
+/* @import "tile.css"; */
+@import "tile2.css";
